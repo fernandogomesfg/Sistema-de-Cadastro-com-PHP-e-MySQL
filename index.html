@@ -9,10 +9,54 @@
 		<h1>Faca o Cadastro</h1>
 
 		<div>
-			<form>
-				<input type="text" name="nome">
-				<input type="text" name="">
-			</form>
+			<form action="php/cadastro.php" method="post">
+		            <h1>Cadastre-se</h1>
+		            
+		            <!-- Caixa do nome Proprio-->
+		            <div>
+		                <label for="nome">Nome próprio:</label><br>
+		                <input type="text" id="nome" name="Nome_proprio" placeholder="Digite o seu nome, sem incluir o Apelido" required="" />
+		                <br> <br>
+		            </div>
+
+		            <!-- Caixa do Apelido-->
+		            <div>
+		                <label for="apelido">Apelido:</label><br>
+		                <input type="text" id="apelido" name="Apelido" placeholder="Digite o seu Apelido" required=""  />
+		                <br> <br>
+		            </div>
+
+		            <!-- Caixa do Data de Nascimento-->
+		            <!--
+		            <div>
+			 			<label for="DataNasc"> Data de Nascimento: </label><br>
+					 	<input type="date" id="DataNasc" name="datanasc" required="">
+			 			<br> <br>
+					</div>
+				-->
+
+					<div>
+						<!-- Caixa de E-Mail -->
+						<label for="email">Email: </label><br>
+						<input type="email" id="email" name="Email" placeholder="Digite o seu E-Mail" required>
+						<br> <br>
+					</div>
+
+					<div>
+						<!-- Caixa de  numero de telefone-->
+						<label for="numero">Numero de Telefone: </label><br>
+						<input type="tel" id="numero" name="Numero_Telefone" placeholder="Digite o seu numero de telefone" required>
+						<br> <br>
+					</div>
+
+		            <div>
+		                <label for="senha">Senha:</label><br>
+		                <input type="password" id="senha" name="Senha" placeholder="Digite a sua senha - máximo 30 caracteres" required="" />
+		            </div>
+
+		            <div>
+		                <button name="btn_enviar"> Casdastre-se </button>
+		            </div>
 		</div>
 		
 	</div>

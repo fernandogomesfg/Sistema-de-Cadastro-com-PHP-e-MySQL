@@ -17,7 +17,21 @@ body{
 }
 
 .princiapl{
-	widows: 400px;
+	widows: 500px;
 	height: 200px;
 	background: #6d4bfc;
+	border: 0;
+	border-radius: 0;
+}
+
+h1{
+	color: #fff;
+	font-size: 24px;
+	text-align: left;
+	font-weight: 500;
+}
+
+form input{
+	margin: 0px 20px;
+	
 }

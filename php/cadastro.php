@@ -15,6 +15,13 @@ if(isset($_POST['btn_enviar'])){
     $numero_telefone = $_POST['numero_telefone'];
     $senha = $_POST['senha'];
     
+    if($conn){
+        $query = mysqli_query($conn, "insert into [nome da tabela](`nome_proprio`, `apelido`, `datanasc`,  `email`, `numero_telefone`, `senha`) values ('".$nome."', '".$apelido."', '".$data_nasc."', '".$email."', '".$numero_telefone."', '".$senha."')");
+            if($query){
+                echo "<br>";
+                echo "Cadastro efectuado com sucesso";
+            }
+    }
 }
 
 

@@ -3,62 +3,93 @@
 <head>
 	<meta charset="utf-8">
 	<title>Cadastro</title>
-	<link rel="stylesheet" href="css/style.css">
+	
 </head>
-<body>
-	<div class="princiapl">
-		<h1>Faca o Cadastro</h1>
+<style>
+	label{
+		width: 40%;
+		margin-bottom: 5px;
+		font-size: 20px;
+	}
+	input{
+		width: 40%;
+		padding: 10px 10px;
+		border: 0;
+		border-radius: 10px;
+		margin-bottom: 2px;
+		text-align: center;
+		color: #6D4BFC;
+	}
 
-		<div>
-			<form action="php/cadastro.php" method="post">
-		            
-		            <!-- Caixa do nome Proprio-->
-		            <div>
-		                <label for="nome">Nome próprio:</label><br>
-		                <input type="text" id="nome" name="nome_proprio" placeholder="Digite o seu nome, sem incluir o Apelido" required="" />
-		                <br> <br>
-		            </div>
+	.btn input{
+		width: 40%;
+		background: #3CEB88;
+		color: #fff;
+		border: 0;
+		padding: 10px 15px;
+		border-radius: 10px;
+		margin-top: 20px;
+		text-align: center;
+	}
+</style>
 
-		            <!-- Caixa do Apelido-->
-		            <div>
-		                <label for="apelido">Apelido:</label><br>
-		                <input type="text" id="apelido" name="apelido" placeholder="Digite o seu Apelido" required=""  />
-		                <br> <br>
-		            </div>
+<body style="background-color: rgb(252, 252, 252);">
+	<center>
+		<div class="princiapl" style="width:40%; height:100%; background: #6d4bfc; border: 0;border-radius: 0;">
+			<h1 style="color: #fff; font-size: 24px; text-align: center; font-weight: 500;">Faça o Cadastro</h1>
 
-		            <!-- Caixa do Data de Nascimento-->
-		            <div>
-			 			<label for="DataNasc"> Data de Nascimento: </label><br>
-					 	<input type="date" id="DataNasc" name="datanasc" required="">
-			 			<br> <br>
-					</div>
+			<div>
+				<form action="php/cadastro.php" method="post">
+						
+						<!-- Caixa do nome Proprio-->
+						<div>
+							<label for="nome">Nome próprio:</label><br>
+							<input type="text" id="nome" name="nome_proprio" placeholder="Digite o seu nome, sem incluir o Apelido" required="" />
+							<br> <br>
+						</div>
 
-					<!-- Caixa de E-Mail -->
-					<div>
-						<label for="email">Email: </label><br>
-						<input type="email" id="email" name="email" placeholder="Digite o seu E-Mail" required>
-						<br> <br>
-					</div>
+						<!-- Caixa do Apelido-->
+						<div>
+							<label for="apelido">Apelido:</label><br>
+							<input type="text" id="apelido" name="apelido" placeholder="Digite o seu Apelido" required=""  />
+							<br> <br>
+						</div>
 
-					<!-- Caixa de  numero de telefone-->
-					<div>
-						<label for="numero">Numero de Telefone: </label><br>
-						<input type="tel" id="numero" name="numero_telefone" placeholder="Digite o seu numero de telefone" required>
-						<br> <br>
-					</div>
+						<!-- Caixa do Data de Nascimento-->
+						<div>
+							<label for="DataNasc"> Data de Nascimento: </label><br>
+							<input type="date" id="DataNasc" name="datanasc" required="">
+							<br> <br>
+						</div>
 
-					<!--Caixa de Senha-->
-		            <div>
-		                <label for="senha">Senha:</label><br>
-		                <input type="password" id="senha" name="senha" placeholder="Digite a sua senha - máximo 30 caracteres" required="" />
-		            </div>
+						<!-- Caixa de E-Mail -->
+						<div>
+							<label for="email">Email: </label><br>
+							<input type="email" id="email" name="email" placeholder="Digite o seu E-Mail" required>
+							<br> <br>
+						</div>
 
-		            <div>
-		                <button name="btn_enviar"> Casdastre-se </button>
-		            </div>
+						<!-- Caixa de  numero de telefone-->
+						<div>
+							<label for="numero">Numero de Telefone: </label><br>
+							<input type="tel" id="numero" name="numero_telefone" placeholder="Digite o seu numero de telefone" required>
+							<br> <br>
+						</div>
+
+						<!--Caixa de Senha-->
+						<div>
+							<label for="senha">Senha:</label><br>
+							<input type="password" id="senha" name="senha" placeholder="Digite a sua senha - máximo 30 caracteres" required="" />
+						</div>
+
+						<div class="btn">
+							<input type="submit" value="Casdastre-se" name="btn_enviar" >
+							<input type="reset" value="Limpar" name="btn_enviar" style="background-color: rgb(207, 32, 32);">
+						</div>
+					</form>
+			</div>
 		</div>
-		
-	</div>
+</center>
 
 </body>
 </html>

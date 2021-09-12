@@ -1,5 +1,5 @@
 <?php
-$conn = mysqli_connect ('localhost','root','','db_login');
+$conn = mysqli_connect ('localhost','root','','db_cadastro_php_mysql');
 
 if ($conn) {
     echo "Conectado a Base de dados";
@@ -16,7 +16,7 @@ if(isset($_POST['btn_enviar'])){
     $senha = $_POST['senha'];
     
     if($conn){
-        $query = mysqli_query($conn, "insert into [nome da tabela](`nome_proprio`, `apelido`, `datanasc`,  `email`, `numero_telefone`, `senha`) values ('".$nome."', '".$apelido."', '".$data_nasc."', '".$email."', '".$numero_telefone."', '".$senha."')");
+        $query = mysqli_query($conn, "insert into tbl_cadastro(`nome`, `apelido`, `data_nasc`,  `email`, `numero_telefone`, `senha`) values ('".$nome."', '".$apelido."', '".$data_nasc."', '".$email."', '".$numero_telefone."', '".$senha."')");
             if($query){
                 echo "<br>";
                 echo "Cadastro efectuado com sucesso";
